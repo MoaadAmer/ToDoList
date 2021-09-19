@@ -1,0 +1,21 @@
+body {
+    margin: auto 0;
+    font-family: Arial, serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+li{
+    cursor: pointer;
+}
