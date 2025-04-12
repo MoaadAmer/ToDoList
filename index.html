@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Layout Master</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<main>
-    <header><h1>My Shopping List</h1></header>
-    <p>Get it done today</p>
-    <label for="userInput">
-        <input id="userInput" type="text" placeholder="Enter Item">
-    </label>
-    <button id="enter">Enter</button>
-    <ul>
-
-        <li class="done">Learn js
-            <button>Delete</button>
-        </li>
-        <li>read book
-            <button>Delete</button>
-        </li>
-        <li>play guitar
-            <button>Delete</button>
-        </li>
-    </ul>
-</main>
-
-<script type="text/javascript" src="script.js"></script>
+    <h1>Shopping List</h1>
+    <div class="container">
+        <div class="form">
+            <p>
+                <label for="item">Item:</label>
+                <input type="text" id="item" name="item" />
+            </p>
+            <p class="button">
+                <button id="addBtn">Add</button>
+            </p>
+        </div>
+        <ol>
+            <li>
+                <span class="done ">milk</span>
+                <button class="delete">Delete</button>
+            </li>
+            <li>
+                <span>honey</span>
+                <button class="delete">Delete</button>
+            </li>
+            <li>
+                <span>rice</span>
+                <button class="delete">Delete</button>
+            </li>
+        </ol>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
